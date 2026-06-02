@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitacora Tecnología Santizo</title>
+
+    <style>
+        html,body{
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        body{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        /* 🔴 HEADER ROJO */
+        header{
+            padding: 20px;
+            background-color: #ff0000;
+        }
+
+        h1{
+            color: #ffffff;
+            text-shadow:
+                0 0 5px #001f3f,
+                0 0 10px #001f3f,
+                0 0 20px #001f3f,
+                0 0 40px #003366;
+            letter-spacing: 2px;
+        }
+
+        main{
+            flex: 1;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .semana{
+            background: #001f3f;
+            margin: 20px auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            width: 95%;
+            max-width: 1000px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            color: white;
+        }
+
+        .semana:hover{
+            transform: translateY(-5px);
+        }
+
+        .semana h4{
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        .semana p{
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        iframe,
+        video{
+            width: 100%;
+            border-radius: 12px;
+            border: none;
+            margin-top: 15px;
+        }
+
+        iframe{
+            height: 600px;
+            background: white;
+        }
+
+        video{
+            max-height: 600px;
+            background: black;
+        }
+
+        footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background-color: #ffcc00;
+            color: black;
+        }
+
+        footer img{
+            width: 120px;
+            transition: transform 0.3s ease;
+        }
+
+        footer img:hover{
+            transform: scale(1.2);
+        }
+
+        @media(max-width:600px){
+
+            footer{
+                flex-direction: column;
+                gap: 15px;
+                padding: 20px;
+            }
+
+            iframe{
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Encabezado de mi pagina web</h1>
+    </header>
+
+    <main>
+
+        <!-- SEMANA 1 -->
+        <div class="semana">
+            <h4>Semana 1</h4>
+
+            <p>
+                Introducción a Arduino y reconocimiento de las partes de la placa.
+            </p>
+
+            <!-- CAMBIA EL NOMBRE SI TU PDF TIENE OTRO -->
+            <iframe src="c:\Users\Alumno Capouilliez\Downloads\Introducción Arduino (1) Joaquin Santizo.pdf"></iframe>
+        </div>
+
+        <!-- SEMANA 2 -->
+        <div class="semana">
+            <h4>Semana 2</h4>
+
+            <p>
+                Video explicativo sobre Arduino.
+            </p>
+
+            <video controls>
+                <source src="c:\Users\Alumno Capouilliez\Downloads\Arduino1finalJASG.mp4" type="video/mp4">
+                Tu navegador no soporta videos HTML5.
+            </video>
+        </div>
+
+        <!-- SEMANA 3 -->
+        <div class="semana">
+            <h4>Semana 3</h4>
+            <p>Contenido de mi bitácora.</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <span>&copy; 2026 Joaquin Santizo</span>
+
+        <img 
+            src="https://www.capouilliez.edu.gt/assets/img/logo.png" 
+            alt="Logo colegio"
+        >
+    </footer>
+
+</body>
+</html>
